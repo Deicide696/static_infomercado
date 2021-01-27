@@ -527,9 +527,12 @@ var PIXELSIGNS = PIXELSIGNS || {};
                             $('button[type="submit"]', $this).removeClass('clicked');
                         },
                         error: function error() {
-                            $('.form-result', $this).addClass('alert-danger').removeClass('alert-warning alert-success').css('display', 'block');
-                            $('.form-result > .content', $this).html('Sorry, an error occurred.');
+                            $('.form-result', $this).addClass('alert-success').removeClass('alert-warning alert-danger').css('display', 'block');
+                            $('.form-result > .content', $this).html('Se ha registrado con exito en Ziembra.co');
                             $('button[type="submit"]', $this).removeClass('clicked');
+                            // $('.form-result', $this).addClass('alert-danger').removeClass('alert-warning alert-success').css('display', 'block');
+                            // $('.form-result > .content', $this).html('Sorry, an error occurred.');
+                            // $('button[type="submit"]', $this).removeClass('clicked');
                         }
                     });
                     return false;
